@@ -1,0 +1,31 @@
+<template>
+    <div>
+    <lightning-layout multiple-rows="" >
+        <lightning-layout-item flexibility="auto" size ="3">
+          
+                        <c-addtwonumber ></c-addtwonumber>
+                    </lightning-layout-item>
+                    <lightning-layout-item flexibility="auto" size ="3">
+                        
+                        <c-subtwonumber></c-subtwonumber>
+                    </lightning-layout-item>
+                    <lightning-layout-item flexibility="auto" size ="3" >
+                       
+                        <c-multwonumber></c-multwonumber>
+                    </lightning-layout-item>
+                    <lightning-layout-item flexibility="auto" size ="3">
+                        
+                        <c-divtwonumber></c-divtwonumber>
+                    </lightning-layout-item>
+                         </lightning-layout>
+            </div>
+            <div>
+                <lightning-button-group>
+                    <lightning-button variant="brand" label="Add" title="Addition" onclick={handleAdd} class="slds-m-left_x-small"></lightning-button>
+                    <lightning-button variant="brand" label="Sub" title="substraction" onclick={handleSub} class="slds-m-left_x-small"></lightning-button>
+                    <lightning-button variant="brand" label="Mul" title="Multplication" onclick={handleMul} class="slds-m-left_x-small"></lightning-button>
+                    <lightning-button variant="brand" label="Div" title="Division" onclick={handleDiv} class="slds-m-left_x-small"></lightning-button>
+                </lightning-button-group>
+            </div>
+        </template>
+        

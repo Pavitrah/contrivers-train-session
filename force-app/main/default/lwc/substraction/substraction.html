@@ -1,0 +1,12 @@
+<template>
+    <lightning-card  title="Substraction" icon-name="standard:formula">
+    <lightning-input type="number" step=".o1" class="operand" label="Number1"></lightning-input>
+     <lightning-input type="number" step=".o1" class="operand" label="Number2"></lightning-input>
+    <br/>
+        <lightning-button variant="brand" label="Sub" title="Substraction" onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+     <br/>
+    <template if:true={Result}>
+  Output of {operation} is {result}
+    </template>
+</lightning-card>
+</template>
